@@ -57,3 +57,12 @@ body {
     border: none;
     padding: 10px 20px;
 }
+
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+}
