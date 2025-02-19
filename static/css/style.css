@@ -1,0 +1,59 @@
+/* General Styles */
+body {
+    background-color: #0c0931;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    background: url('/static/store/images/hero-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 3rem;
+}
+.hero p {
+    font-size: 1.5rem;
+}
+.hero .btn {
+    background-color: #e80074;
+    border: none;
+    padding: 10px 20px;
+}
+
+/* New Arrivals Section */
+.new-arrivals img {
+    border-radius: 10px;
+}
+.new-arrivals h2 {
+    color: #00cfe5;
+}
+.new-arrivals .btn {
+    background-color: #1d1856;
+    color: white;
+}
+
+/* Featured Products Carousel */
+.carousel img {
+    border-radius: 10px;
+}
+
+/* Wholesale Section */
+.wholesale {
+    background: url('/static/store/images/wholesale.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.wholesale .btn {
+    background-color: #c200db;
+    border: none;
+    padding: 10px 20px;
+}

@@ -20,7 +20,6 @@ from store.views import home_view, wholesale_view, about_view, contact_view
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
-    path('admin/', admin.site.urls),
     path('', home_view, name='home'),
     path('shop/', include('store.urls')),  # Product pages
     path('wholesale/', wholesale_view, name='wholesale'),

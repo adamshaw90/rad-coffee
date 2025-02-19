@@ -15,5 +15,9 @@ def about_view(request):
     return render(request, 'store/about.html')
 
 
-def contact_view(request):  # Make sure this exists!
+def contact_view(request):
     return render(request, 'store/contact.html')
+
+def product_list_view(request):
+    products = Product.objects.all()
+    return render(request, 'store/shop.html', {'products': products})
