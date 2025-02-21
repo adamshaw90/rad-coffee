@@ -1,68 +1,111 @@
 /* General Styles */
 body {
-    background-color: #0c0931;
-    color: white;
-    font-family: Arial, sans-serif;
+    background-color: #ffffff;  /* White background */
+    color: #000000;             /* Black text */
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding-top: 56px; /* Adjust if navbar height changes */
+}
+
+/* Navbar - Fixed at the top */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 /* Hero Section */
 .hero {
-    background: url('/static/store/images/hero-image.jpg') no-repeat center center/cover;
-    height: 100vh;
+    background: url('/static/store/images/coffee-hero.jpg') no-repeat center center/cover;
+    height: 100vh;  /* Full-screen height */
+    width: 100%;  /* Full width */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-}
-.hero h1 {
-    font-size: 3rem;
-}
-.hero p {
-    font-size: 1.5rem;
-}
-.hero .btn {
-    background-color: #e80074;
-    border: none;
-    padding: 10px 20px;
+    color: white;
+    position: relative;
+    margin-top: 0;
+    margin: 0;
+    padding: 0;
 }
 
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.hero p {
+    font-size: 1.2rem;
+}
+.hero .btn {
+    background-color: #c2b280; /* Beige button */
+    color: #000000;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+}
+.hero .btn:hover {
+    background-color: #a19262;
+}
+
+
 /* New Arrivals Section */
+.new-arrivals {
+    padding: 50px 0;
+    background-color: #f5f5f5; /* Light gray background */
+}
 .new-arrivals img {
     border-radius: 10px;
 }
 .new-arrivals h2 {
-    color: #00cfe5;
+    color: #000000;
 }
 .new-arrivals .btn {
-    background-color: #1d1856;
-    color: white;
+    background-color: #c2b280;
+    color: black;
+    font-size: 1rem;
+}
+.new-arrivals .btn:hover {
+    background-color: #a19262;
 }
 
 /* Featured Products Carousel */
 .carousel img {
     border-radius: 10px;
 }
+.carousel-indicators button {
+    background-color: black;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Make arrows white */
+}
 
 /* Wholesale Section */
 .wholesale {
     background: url('/static/store/images/wholesale.jpg') no-repeat center center/cover;
-    height: 60vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: white;
 }
 .wholesale .btn {
-    background-color: #c200db;
-    border: none;
-    padding: 10px 20px;
+    background-color: #c2b280;
+    color: black;
+    padding: 12px 24px;
+    font-size: 1rem;
+}
+.wholesale .btn:hover {
+    background-color: #a19262;
 }
 
-
-.navbar-brand {
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-.navbar-nav .nav-link {
-    font-size: 1.1rem;
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
 }

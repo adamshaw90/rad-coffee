@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.core.mail import send_mail
 from django.conf import settings
 from django.contrib.auth.decorators import login_required
+from .models import Product
 
 
 def home_view(request):
@@ -19,9 +20,11 @@ def about_view(request):
 def contact_view(request):
     return render(request, 'store/contact.html')
 
+
 def product_list_view(request):
     products = Product.objects.all()
     return render(request, 'store/shop.html', {'products': products})
+
 
 @login_required
 def account_view(request):
