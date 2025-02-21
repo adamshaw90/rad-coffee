@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-%tv#2xaycd1pa85fd#exrrcs(cs*zrew505xgtcm2off*-!b95
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['rad-coffee-32ba8857c75a.herokuapp.com']
+ALLOWED_HOSTS = ['rad-coffee-32ba8857c75a.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -108,6 +108,8 @@ LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'rad.wsgi.application'
 
+CSRF_TRUSTED_ORIGINS = ['https://rad-coffee-32ba8857c75a.herokuapp.com/']
+
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
@@ -179,7 +181,7 @@ if 'USE_AWS' in os.environ:
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
-    
+
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'rad-coffee'
     AWS_S3_REGION_NAME = 'ap-southeast-2'
